@@ -1,0 +1,53 @@
+:root {
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --medGray: rgb(166, 166, 166);
+    --medGrayT: rgba(166, 166, 166, 0.5);
+    --lightGray: rgb(217, 217, 217);
+    --lightGrayT: rgba(217, 217, 217, 0.5);
+}
+
+/* Universal */
+
+body {
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: var(--black);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--white);
+}
+
+/* Main */
+
+/* Banner */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner p {
+    font-weight: 500;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
