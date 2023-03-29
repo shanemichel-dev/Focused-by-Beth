@@ -35,9 +35,22 @@ a {
 /* Header */
 
 header {
+    position: relative;
     display: flex;
     justify-content: center;
     background-color: var(--white);
+    width: 100%;
+}
+
+.socialNav {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+.socialIcons {
+    width: 2rem;
+    height: 2rem;
 }
 
 /* Main */
@@ -151,9 +164,26 @@ footer {
 
 /* Phone */
 @media screen and (max-width: 480px) {
+    .container {
+        justify-content: center;
+        padding: 0.5rem 0.5rem 0 0.5rem;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     header img {
         width: 20rem;
         height: auto;
+    }
+
+    .socialNav {
+        position: relative;
+        top: 0;
+        right: 0;
     }
 
     .banner p {
@@ -163,6 +193,7 @@ footer {
     .card {
         width: 18rem;
         height: 18rem;
+        margin: 1rem 0;
     }
 
     footer {
