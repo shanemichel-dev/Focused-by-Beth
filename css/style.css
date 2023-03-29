@@ -9,20 +9,27 @@
 
 /* Universal */
 
-body {
-    margin: 0 auto;
+* {
+    margin: 0;
+    padding: 0;
+ }
+
+body, html {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
-    background-color: var(--black);
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
 }
 
 /* Header */
@@ -30,7 +37,6 @@ body {
 header {
     display: flex;
     justify-content: center;
-    width: 100%;
     background-color: var(--white);
 }
 
@@ -39,15 +45,135 @@ header {
 /* Banner */
 
 .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
 }
 
 .banner p {
+    font-size: 1.5rem;
     font-weight: 500;
     background-color: var(--white);
-    padding: 1rem;
     border-radius: 1rem;
 }
 
+/* Gallery */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.card {
+    height: 20rem;
+    width: 20rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.one {
+    background-image: url("/img/gallery/b_w_bride.jpg");
+    background-size: cover;
+}
+
+.two {
+    background-image: url("/img/gallery/baby1.jpg");
+    background-size: cover;
+}
+
+.three {
+    background-image: url("/img/gallery/barnbride.jpg");
+    background-size: cover;
+}
+
+.four {
+    background-image: url("/img/gallery/colorwedding.jpg");
+    background-size: cover;
+}
+
+.five {
+    background-image: url("/img/gallery/cow1.jpg");
+    background-size: cover;
+}
+
+.six {
+    background-image: url("/img/gallery/engagement1.jpg");
+    background-size: cover;
+}
+
+.seven {
+    background-image: url("/img/gallery/fieldbaby.jpg");
+    background-size: cover;
+}
+
+.eight {
+    background-image: url("/img/gallery/woman1.jpg");
+    background-size: cover;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--medGray);
+    color: var(--black);
+    font-size: 2rem;
+    height: 10rem;
+    width: 100%;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+/* Media Queries */
+
+/* Tablet */
+/* @media screen and (max-width: 992px) {
+    
+}
+
+/* Phone */
+@media screen and (max-width: 480px) {
+    header img {
+        width: 20rem;
+        height: auto;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 6rem;
+
+    }
+
+    .copyright {
+        font-size: 1rem;
+    }
+}
